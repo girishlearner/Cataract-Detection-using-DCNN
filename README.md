@@ -17,15 +17,7 @@ To run the project locally, follow these steps:
 * Install the required packages using pip install -r requirements.txt.
 * Navigate to the project directory and run python app.py to start the Flask server.
 * Open your web browser and go to http://localhost:5000.
-## Contributing
-Contributions to this repository are welcome and encouraged. To contribute, please follow these steps:
 
-* Fork the repository to your own GitHub account.
-* Clone the forked repository to your local machine.
-* Create a new branch for your changes.
-* Make changes to the code as desired.
-* Commit your changes and push them to your forked repository.
-* Submit a pull request to the original repository.
 
 
  

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to the Bike Sharing Trends Tool!</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Add any additional head content here -->
+    <style>
+        body {
+            background-color: #f8f9fa;
+            background-image: url(/static/images/eye-1500.jpg); 
+            background-size: cover;            
+        }
+        .container {
+            margin-top: 100px;
+        }
+        .display-4 {
+            font-size: 60px;
+            color: #f8f9fa;
+            text-shadow: 0 2px 1px #c5cac3, 
+                        -1px 3px 1px #d2d8d0, 
+                        -2px 5px 1px #a0a29f;
+            
+        }
+       
+        .lead {
+            font-size: 20px;
+            margin-bottom: 30px;
+            color:#f8f9fa;
+                   
+            
+         }
+        .btn {
+            font-size: 1.9rem;
+            padding: 10px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container text-center">
+        <h1 class="display-4">Welcome To The Cataract Detection Tool!</h1>
+        <p class="lead">Empowering your vision.</p>
+        <div class="row justify-content-center">
+            <a href="{{ url_for('signup') }}" class="btn btn-primary m-2">Sign Up</a>
+            <a href="{{ url_for('login') }}" class="btn btn-success m-2">Login</a>
+            <a href="{{ url_for('about') }}" class="btn btn-info m-2">About</a>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.9/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

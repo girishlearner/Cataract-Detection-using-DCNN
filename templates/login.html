@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Add your head content here -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <title>Login</title>
+    <style>
+        body {
+            background-color: #f8f9fa;
+            background-image: url(/static/images/eye.jpg); 
+            background-size: cover;            
+        }
+        
+    </style>
+</head>
+<body class="bg-light">
+    <div class="container mt-5">
+        <form action="{{ url_for('login') }}" method="POST">
+            <fieldset class="p-3">
+                <legend class="text-center text-uppercase" style="font-size: 50px;">Login</legend>
+
+                <!-- Username -->
+                <div class="form-group row">
+                    <label for="username" class="col-md-3 col-form-label" style="font-size: 20px;">Username:</label>
+                    <div class="col-md-9">
+                        <input type="text" class="form-control" id="username" name="username" required>
+                    </div>
+                </div>
+
+                <!-- Password -->
+                <div class="form-group row">
+                    <label for="password" class="col-md-3 col-form-label" style="font-size: 20px;">Password:</label>
+                    <div class="col-md-9">
+                        <input type="password" class="form-control" id="password" name="password" required>
+                    </div>
+                </div>
+
+                <div class="flex-container row justify-content-center m-4">
+                    <button type="submit" class="btn btn-primary m-2" style="font-size: 20px;">Login</button>
+                    <a href="{{ url_for('welcome') }}" class="btn btn-success m-2" style="font-size: 20px;">Back to Home</a>
+                </div>
+            </fieldset>
+        </form>
+
+        <!-- Flash Messages -->
+        <div class="mt-4">
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    {% for message in messages %}
+                        <div class="alert alert-dismissible fade show {% if 'successful' in message %} alert-success {% else %} alert-danger {% endif %}" role="alert">
+                            {{ message }}
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>

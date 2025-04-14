@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Bike Sharing Trends Tool</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Add any additional head content here -->
+    <style>
+        body {
+            background-color: #f8f9fa;
+            background-image: url(/static/about.jpg); 
+            background-size: cover;
+            color: #333; /* Set the default text color */
+            font-family: 'Arial', sans-serif; /* Change font family */
+        }
+
+        .container {
+            margin-top: 100px;
+        }
+
+        h1 {
+            font-size: 3.5rem; /* Increase font size */
+            color: #8b1c10; /* Change font color */
+            font-weight: bold; /* Add font weight for emphasis */
+        }
+
+        .lead {
+            font-size: 1.5rem; /* Increase lead font size */
+            margin-bottom: 20px;
+            color: #eff2f4; /* Change lead font color */
+        }
+
+        p1 {
+            font-size: 1.2rem; /* Increase paragraph font size */
+            color: #555; /* Change paragraph font color */
+        }
+        p {
+            font-size: 1.2rem; /* Increase paragraph font size */
+            color: #510b0b89; /* Change paragraph font color */
+            text-align: justify;
+            
+        }
+
+        .btn {
+            font-size: 1.5rem; /* Increase button font size */
+            color: #fff; /* Set button text color */
+            background-color: #007bff; /* Set button background color */
+            border-color: #007bff; /* Set button border color */
+        }
+
+        .btn:hover {
+            background-color: #0056b3; /* Change button background color on hover */
+            border-color: #0056b3; /* Change button border color on hover */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container text-center">
+        <h1 class="display-4">About Cataract Detection Tool</h1>
+        <p>Early detection is the key to identifying and treating cataracts before they worsen and impact qualify of life. There are some warning signs that indicate you may be developing cataracts, or another eye condition or disease. Certain groups of people are more susceptible to developing cataracts than others. Knowing the risks and signs can help you care for your eyes and help you to maintain clear vision for longer.
+         </p>
+        <div class="row justify-content-center">
+            <!-- You can add more content or features related to the about page here -->
+            <a href="{{ url_for('welcome') }}" class="btn btn-primary m-2">Back to Home</a>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.9/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

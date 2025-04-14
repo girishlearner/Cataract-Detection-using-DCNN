@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href={{url_for('static' , filename = 'css/normalize.css')}}>
+        <link rel="stylesheet" href={{url_for('static' , filename = 'css/grid.css')}}>
+        <link rel='stylesheet' href={{url_for('static' , filename = 'css/style.css')}}>
+        
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        
+        <title>Cataract Prediction</title>
+        <meta name="keywords" content="cutom file input, styling, label, cross-browser, accessible, input type file" />
+		
+		<style>
+            body{
+                background-color: #f8f9fa;
+                background-image: url(/static/images/eye1.jpg); 
+                background-size: cover;  
+
+			}
+			.content {
+			  max-width: 700px;
+			  margin: auto;
+			  }
+			
+			
+		</style>
+
+
+    </head>
+	
+    <body>
+        <nav>
+            <button style="font-size: 20px;background-color: red; margin-top: 2%; float: right; margin-right: 20px;" ><a class="logout" href ="/login">log out</a  ></button>        
+           
+        </nav>
+	<div class="bg-img">
+	<div class="content">
+
+            
+   
+        <div class = "index-main">
+
+        <div style = "width : 100%; padding-top : 5%;">
+            <div class = "header-content">
+                 <h1 style = "text-align: center;color: rgb(183, 245, 234);font-size:60px;margin-bottom: 50px;">Cataract Prediction</h1>
+            </div>
+            
+        </div>
+        
+        <div class="upload-section">
+
+            <div class="upload-file">
+                <form class = "file-form" action="/success" method="post", enctype="multipart/form-data">
+                    <input class="file-form-input" type="file" , name = "file"/>
+                    <button class="btn btn-success btn-lg">Upload</button> 
+                </form>
+            </div>
+
+            
+            <div class = "header-content-sub">
+                    <p style = "text-align: center; margin-top: 15px;color: red" class="header-content-info">{{error}}</p>
+            </div>
+        </div>
+
+        
+	     </div>  
+	</div>			 
+	</div>	 
+    </body>
+</html>

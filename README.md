@@ -14,14 +14,4 @@ Flask Web Application
 
 The Flask web application allows users to upload an eye image and receive a prediction of the presence of cataracts. The user interface is built using HTML, CSS, and JavaScript.
 
-Usage
 
-To run the project locally, follow these steps:
-
-1. Clone the repository to your local machine.
-
-2. Install the required packages using pip install -r requirements.txt.
-   
-4. Navigate to the project directory and run python app.py to start the Flask server.
-
-5. Open your web browser and go to http://localhost:5000.
